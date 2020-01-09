@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.udacity.course3.reviews")
 @EnableJpaRepositories
 @EnableMongoRepositories
 public class ReviewsApplication {

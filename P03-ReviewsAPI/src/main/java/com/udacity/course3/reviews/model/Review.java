@@ -32,7 +32,7 @@ public class Review {
     @JoinColumn(name = "product_id")
     private Product product;
 
-    @OneToMany(mappedBy = "review")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "review")
     @JsonIgnore
     private List<Comment> comments;
 

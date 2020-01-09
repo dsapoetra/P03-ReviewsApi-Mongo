@@ -19,7 +19,7 @@ public class Comment {
     @NotNull
     private Date createdDate;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "review_id")
     private Review review;
 
